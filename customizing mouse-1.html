@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<style type="text/css">
+			#square {
+				width: 20px;
+				height: 20px;
+				background: mediumpurple;
+				position: fixed;
+			}
+			html {
+				cursor: none;
+			}
+		</style>
+		
+		<div id="square"></div>
+		
+		<script type="text/javascript">
+			document.onmousemove = function follow(event) {
+				var a = document.getElementById("square");
+				a.style.top = event.clientY + "px";
+				a.style.left = event.clientX + "px";
+				
+			}
+		</script>
+	</body>
+</html>
